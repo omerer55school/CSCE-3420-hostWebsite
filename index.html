@@ -3,61 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Test</title>
-  <!-- Link to Bootstrap CSS -->
+  <title>Omer's Food Adventures</title>
+  <!-- Link to Bootstrap CSS and Custom CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">My Bootstrap Site</a>
+      <a class="navbar-brand" href="#">Omer's Food Adventures</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" href="#about">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#restaurants">Restaurant Food</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#homemade">Homemade Food</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Jumbotron -->
-  <div class="jumbotron text-center mt-5">
-    <h1 class="display-4">Hello, Bootstrap!</h1>
-    <p class="lead">This is a simple Bootstrap example page.</p>
-    <hr class="my-4">
-    <p>Bootstrap makes styling so much easier!</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </div>
+  <!-- Banner Section -->
+  <section class="banner">
+    <img src="assets/images/selfie_banner.jpg" alt="Omer's Selfie" />
+  </section>
 
-  <!-- Card Example -->
-  <div class="container mt-5">
-    <div class="row">
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <h2 class="section-title">Welcome to My Food Adventure!</h2>
+    <p class="about-text">
+      Hi, I'm Omer, a passionate food enthusiast and photographer. Welcome to my food adventure! 
+      From exploring unique dishes in the best local restaurants to creating flavorful homemade meals,
+      I love capturing the beauty and taste of every plate. This website is a collection of my food photography 
+      journey, showcasing dishes I've enjoyed at restaurants and culinary experiments from my own kitchen. 
+      Join me as I share my love for food, one photo at a time!
+    </p>
+  </section>
+
+  <!-- Restaurant Food Section -->
+  <section id="restaurants" class="container mt-5">
+    <h2 class="section-title">Food from Restaurants</h2>
+    <p class="description">Join me as I explore culinary delights from around the city! Here are some of my favorite dishes I've had the pleasure of tasting at different restaurants. From fancy plates to hidden gems, it’s all here!</p>
+    <div class="row gallery">
       <div class="col-md-4">
-        <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Sample Image">
-          <div class="card-body">
-            <h5 class="card-title">Sample Card</h5>
-            <p class="card-text">This is a card. Bootstrap styling should make it look nice and structured.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+        <div class="image-container">
+          <img src="assets/images/restaurants/burger.jpg" alt="Juicy burger served at a restaurant" class="landscape">
         </div>
+        <p class="caption">A Juicy Burger, Perfectly Seasoned and Grilled</p>
+      </div>
+      <div class="col-md-4">
+        <div class="image-container">
+          <img src="assets/images/restaurants/desi lamb chops.jpg" alt="Desi-style lamb chops served with spices" class="landscape">
+        </div>
+        <p class="caption">Desi Lamb Chops – A Spicy Twist on a Classic</p>
+      </div>
+      <div class="col-md-4">
+        <div class="image-container">
+          <img src="assets/images/restaurants/Uzbek steak.jpg" alt="Uzbek-style steak served with herbs and spices" class="landscape">
+        </div>
+        <p class="caption">Uzbek Steak – A Taste of Central Asia</p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Link to Bootstrap JS and dependencies -->
+  <!-- Homemade Food Section -->
+  <section id="homemade" class="container mt-5">
+    <h2 class="section-title">Homemade Creations</h2>
+    <p class="description">Cooking at home is a whole different adventure! Here’s a peek into some of the dishes I’ve created in my own kitchen. It’s all about experimenting with flavors, and sometimes, surprising myself with what turns out on the plate.</p>
+    <div class="row gallery">
+      <div class="col-md-4">
+        <div class="image-container">
+          <img src="assets/images/homemade/brisket.jpg" alt="Smoked brisket cooked at home" class="landscape">
+        </div>
+        <p class="caption">Home-Smoked Brisket – Tender and Flavorful</p>
+      </div>
+      <div class="col-md-4">
+        <div class="image-container">
+          <img src="assets/images/homemade/karhai.jpg" alt="Karhai dish with spices and herbs cooked at home" class="portrait">
+        </div>
+        <p class="caption">Karhai – A Spicy Homemade Classic</p>
+      </div>
+      <div class="col-md-4">
+        <div class="image-container">
+          <img src="assets/images/homemade/pakoray.jpg" alt="Crispy pakoray, a homemade snack" class="portrait">
+        </div>
+        <p class="caption">Crispy Pakoray – The Perfect Snack</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap and Custom Scripts -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>

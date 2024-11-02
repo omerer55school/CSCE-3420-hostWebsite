@@ -1,0 +1,84 @@
+/* assets/css/styles.css */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px; /* Set the desired height */
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .banner img {
+    width: 100%;
+    max-width: 1600px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .about-section {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .about-text {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    margin-top: 30px;
+    text-align: center;
+    color: #ff6347;
+  }
+  
+  .description {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 30px;
+  }
+  
+  .gallery .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 100%;
+  }
+  
+  .gallery img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .gallery img.landscape {
+    width: 100%;
+    height: auto;
+  }
+  
+  .gallery img.portrait {
+    height: 100%;
+    width: auto;
+  }
+  
+  .caption {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    min-height: 50px;
+  }
+  
