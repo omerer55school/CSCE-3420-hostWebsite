@@ -1,1 +1,1 @@
-fdasf
+This is a website I made for school. Its hosted on AWS. I thought a food theme would be cool as I am a foodie.
